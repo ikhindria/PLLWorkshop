@@ -16,7 +16,7 @@ Some of the applications of PLL are for clock synchronization, in demodulation c
 
 ## 2. Components of PLL  
 ![image](https://user-images.githubusercontent.com/90971641/133893707-3e4a4a03-50dd-4181-9f52-037e71aa4eb3.png)
-### i. Phase Frequency Detector (PFD)
+## i. Phase Frequency Detector (PFD)
 Phase frequency detector is used to compare the phase and frequency of the reference signal with the feedback signal and generate a digital output. The output is generated  depending on whether the feedback signal is lagging or leading w.r.t the reference signal in phase. It also detects the frequency difference between the signals using the same functionality.  
 This functionality can be represented in a state machine format:
  ![image](https://user-images.githubusercontent.com/90971641/133895518-a2b4192e-d893-4304-b993-e486fa9c5a47.png)
@@ -26,4 +26,13 @@ When falling edge of reference signal arrives, UP=1. Then, when falling edge of 
 When rising edge of reference signal arrives, DOWN=1. Then, when rising edge o f output signal arrives, DOWN = 0 and the system goes back to initial state.
 
  **Implementation using flipflops:** When both flipflops are triggered at the negedge, both the outputs become 1 and the AND gate activates the CLR signal, making output 0.
+
 ![image](https://user-images.githubusercontent.com/90971641/133895747-ba1a2984-2459-447d-93f2-dd71e3c65ea6.png)
+
+**Dead Zone:** Range where difference in phase and frequency cannot be detected as the edges of REF and OUT signal are very close and the UP or DOWN signals are not high for enough time. More precise the PFD, better the stability of the phase-locked loop.
+## ii. Charge Pump
+A charge pump converts a digital signal which denotes the phase and frequency difference into an analog signal that can be used to control the oscillator. 
+This can be done using a current steering circuit. It directs the current from VDD to output or from output to ground, depending on the given UP and Down signals. 
+
+![image](https://user-images.githubusercontent.com/90971641/133896853-847a65e4-8edc-45d1-a8b2-248a803e254e.png)
+
