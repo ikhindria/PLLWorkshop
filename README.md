@@ -8,7 +8,7 @@
    - [Tools and Development Flow](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#4-tools-and-development-flow)  
    - [PLL Specifications](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#5-pll-specifications)  
    - [Pre-Layout Circuits](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#6-pre-layout-circuits)  
-   - [Setting up Magic and NGSPICE*](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#7-setting-up-magic-and-ngspice)  
+   - [Setting up Magic and NGSPICE](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#7-setting-up-magic-and-ngspice)  
  - [Day 2: Lab](#day-2-lab)  
    - [Circuit Design and Pre-Layout Simulations](#1-circuit-design-and-pre-layout-simulations)  
    - [Layouts](2-layouts)  
