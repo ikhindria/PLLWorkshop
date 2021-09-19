@@ -12,6 +12,10 @@
  - Day 2: Lab 
     1. Circuit Design and Pre-Layout Simulations
     2. Layouts
+    3. Extracting Parasitics
+    4. Post-Layout Simulations
+    5. Tapeout Theory
+  - Acknowledgements
 # Day 1: Basics of PLL
 ## 1. Introduction to PLL
 Phase-Locked Loop (PLL) is a control system which compares the frequency and phase of the on-chip oscillator with the reference signal and modifies the voltage of the oscillator in order to match the frequency of the oscillator with reference signal. PLL can be used to generate a signal of frequency equal to or multiple of the frequency of the reference signal. PLL reduces noise in the signal genrated by the oscillator.      
@@ -163,7 +167,7 @@ Combining all the components in one file, including loop filter and instantiatin
 **Close up**
 ![image](https://user-images.githubusercontent.com/90971641/133922905-db782cc5-65b7-46dc-9738-24e5c0f225b5.png)
 ## 2. Layouts
-**Commands:**
+**Commands:**  
 ![image](https://user-images.githubusercontent.com/90971641/133924475-67ab98fe-cb5c-4e54-8d43-17bf590f2bac.png)
 
 ### i. FD
@@ -179,8 +183,48 @@ Combining all the components in one file, including loop filter and instantiatin
 ![image](https://user-images.githubusercontent.com/90971641/133924528-e3d38dbc-49bb-4a7d-b965-2621b6c1b1ac.png)
 
 ### v. MUX
+MUX used to select between charge pump and external source to control the VCO. This enables the VCO mode.  
 ![image](https://user-images.githubusercontent.com/90971641/133924545-70f68757-7aed-4981-b7ab-1d9f63f4f065.png)
 
-### vi. PLL
-![image](https://user-images.githubusercontent.com/90971641/133924562-e2f24ac3-9963-43d6-a315-82aa2c8aa60d.png)
+### vi. PLL 
+![image](https://user-images.githubusercontent.com/90971641/133924562-e2f24ac3-9963-43d6-a315-82aa2c8aa60d.png)  
+
+**To generate GDS file after post-layout simulations, click on File->Write GDS.** 
+![image](https://user-images.githubusercontent.com/90971641/133927503-a448c753-0ac8-4c9b-ba15-ce3f26d9c075.png)
+
+## 3. Extracting Parasitics
+![image](https://user-images.githubusercontent.com/90971641/133927158-43608f0b-285b-4735-9ead-0427b76ade8b.png)
+
+## 4. Post-Layout Simulations
+### i. PFD
+![image](https://user-images.githubusercontent.com/90971641/133927164-898b540c-84df-415f-b0c8-126ead07162d.png)
+![image](https://user-images.githubusercontent.com/90971641/133927167-f6be659c-c26a-4ac8-93bb-5463d3cc6f0c.png)
+
+### ii. VCO
+![image](https://user-images.githubusercontent.com/90971641/133928666-728898f2-2b8d-40ac-aa4a-5fc1dd0b0c0c.png)
+
+### iii. FD
+![image](https://user-images.githubusercontent.com/90971641/133928737-d18a4d38-4ca1-4524-aa47-6a01aae86103.png)
+### iv. CP
+**Charging**  
+![image](https://user-images.githubusercontent.com/90971641/133928783-90ad860e-e7d0-4e35-9c1f-8444f547a77c.png)
+**Discharging**  
+![image](https://user-images.githubusercontent.com/90971641/133928814-8a7d9489-fa05-4840-bc85-be9b8b5136ef.png)
+### v. PLL  
+![image](https://user-images.githubusercontent.com/90971641/133928857-f1041fb7-ab41-4e4a-aaaf-eefde206d41b.png)
+
+## 4. Tapeout Theory
+Tapeout means sending the final design to the Fab. 
+It will contain
+- I/O pads
+- Peripherals
+- Memory
+- Testing Mechanisms
+- Others  
+**Caravel SoC by efabless**  
+![image](https://user-images.githubusercontent.com/90971641/133928966-0249dad6-2de9-4f62-8f1c-8ffda8bf2eb6.png)
+
+# Acknowledgements
+1)Mr. Kunal Ghosh From VSD  
+2)Ms. Lakshmi Sathi
 
