@@ -1,7 +1,7 @@
 # Phase-Locked Loop using Open-Source Google-Skywater 130nm 
 ![image](https://user-images.githubusercontent.com/90971641/133891914-a342895d-2a64-4b2f-b9a4-cb4efac3ac32.png)
 # Index
-- Day 1: Basics of PLL and Lab Setup 
+- [Day 1: Basics of PLL and Lab Setup](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#day-1-basics-of-pll)
     1. Introduction to PLL
     2. Components of PLL
     3. Some Common Terms
