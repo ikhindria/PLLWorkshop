@@ -1,7 +1,7 @@
 # Phase-Locked Loop using Open-Source Google-Skywater 130nm 
 ![image](https://user-images.githubusercontent.com/90971641/133891914-a342895d-2a64-4b2f-b9a4-cb4efac3ac32.png)
 # Index
-- [Day 1: Basics of PLL and Lab Setup](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#day-1-basics-of-pll)  
+- [*Day 1: Basics of PLL and Lab Setup*](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#day-1-basics-of-pll)  
     [1. Introduction to PLL](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#1-introduction-to-pll)  
     [2. Components of PLL](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#2-components-of-pll)  
     [3. Some Common Terms](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#3-some-common-terms)  
@@ -9,13 +9,13 @@
     [5. PLL Specifications](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#5-pll-specifications)  
     [6. Pre-Layout Circuits](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#6-pre-layout-circuits)  
     [7. Setting up Magic and NGSPICE](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#7-setting-up-magic-and-ngspice)  
- - [Day 2: Lab](#day-2-lab)  
+ - [*Day 2: Lab*](#day-2-lab)  
     [1. Circuit Design and Pre-Layout Simulations](#1-circuit-design-and-pre-layout-simulations)  
     [2. Layouts](2-layouts)  
     [3. Extracting Parasitics](#3-extracting-parasitics)  
     [4. Post-Layout Simulations](#4-post-layout-simulations)  
     [5. Tapeout Theory](#5-tapeout-theory)  
-  - [Acknowledgements](#acknowledgements)
+  - [*Acknowledgements*](#acknowledgements)
 # Day 1: Basics of PLL
 ## 1. Introduction to PLL
 Phase-Locked Loop (PLL) is a control system which compares the frequency and phase of the on-chip oscillator with the reference signal and modifies the voltage of the oscillator in order to match the frequency of the oscillator with reference signal. PLL can be used to generate a signal of frequency equal to or multiple of the frequency of the reference signal. PLL reduces noise in the signal genrated by the oscillator.      
