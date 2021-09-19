@@ -53,14 +53,14 @@ This output will control the VCO. Increasing the output voltage speeds up the VC
   
   ## iii. Loop Filter
   Capacitor of charge pump smoothens the output however it is not that smooth. There are still fluctuations due to UP and DOWN signals. The output capacitor can be replaced by a LPF(Low Pass Filter) so that any fluctuations of high frequency can be smoothened out. Adding LPF increses the stability of the PLL by adding a zero to the frequency domain.   
-### For stability of the loop: Thumb Rule - (a)Cx~=C/10 (b) Loop Filter B.W. ~= Highest Output Frequency/10  else the stability of PLL reduces
- ### Loop Filter B.W.=1/(1+RC1) where C1=CCx/(C+CX)                                             
+**For stability of the loop: Thumb Rule - (a)Cx~=C/10 (b) Loop Filter B.W. ~= Highest Output Frequency/10  else the stability of PLL reduces    
+Loop Filter B.W.=1/(1+RC1) where C1=CCx/(C+CX)**                                             
                                             
 ![image](https://user-images.githubusercontent.com/90971641/133915452-2e502302-d5e1-435a-ab86-bfffa27cacb7.png)
 
 ## iv. Voltage-Controlled Oscillator (VCO)
 It is the most common on-chip oscillator design. It is a ring oscillator which consusts of a series combination of odd number of inverters with a delay. It causes the output signal to flip after a delay. It operates at a fixed frequency. 
-### Period = 2xdelay(inverter)x inverter_count
+### Period = 2 x delay(inverter) x inverter_count
 To vary frequency, delay must be vaired and consequently, current supplied must be varied. Delay is the time taken to charge the output. 
 We can control the frequency of the oscillator by 'starving' the oscillator of current. 
 
@@ -118,7 +118,7 @@ Tools being used : Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/90971641/133916703-4dfda7ae-9dfe-4b83-a606-1a8f18e39755.png)
 
 ##  7. Setting Up Magic and NGSPICE
-NGSPICE and MAGIc were pre-installed in the lab assisstance.   
+NGSPICE and MAGIC were pre-installed in the lab assistance.   
 **Cloning repo to download technology file for Google Skywater 130nm for NGSPICE**  
 ![image](https://user-images.githubusercontent.com/90971641/133918315-7d406b7f-56b5-4fbb-a855-b19d8e5afefe.png)
 
@@ -133,16 +133,16 @@ NGSPICE and MAGIc were pre-installed in the lab assisstance.
 # Day 2: Lab
 ## 1. Circuit Design and Pre-Layout Simulations
 ### i. FD
-- x denotes sub circuit and in sky 130nm library mos models are deoted as sub ckts
-m - mos
-c-capacitance
-r-resistance
-v-voltage source 
-and so on
-- 3 2 1 1 drain gate source body respectively names of net
-- width w=360 x 2 =720n; 360 is the min width in skywater for nfet. Double taken for transistor sizing purpose.
-- nets 1=vdd, 0=gnd, 2= gate (input) 3 output  
-**Command for simulation:**  
+- x denotes sub circuit and in sky 130nm library mos models are deoted as sub circuits  
+m - mos  
+c-capacitance  
+r-resistance  
+v-voltage source   
+and so on  
+- 3 2 1 1 drain gate source body respectively names of net  
+- width w=360 x 2 =720n; 360 is the min width in skywater for nfet. Double taken for transistor sizing purpose.  
+- nets 1=vdd, 0=gnd, 2= gate (input) 3 output    
+**Command for simulation:**    
 ![image](https://user-images.githubusercontent.com/90971641/133921410-5411689f-0de1-4c1d-a27a-a800bfdcb181.png)
 
 ![image](https://user-images.githubusercontent.com/90971641/133921421-cda4000c-acc8-4207-8c6d-0f78d0f3fb0f.png)
@@ -213,7 +213,7 @@ MUX used to select between charge pump and external source to control the VCO. T
 ### v. PLL  
 ![image](https://user-images.githubusercontent.com/90971641/133928857-f1041fb7-ab41-4e4a-aaaf-eefde206d41b.png)
 
-## 4. Tapeout Theory
+## 5. Tapeout Theory
 Tapeout means sending the final design to the Fab. 
 It will contain
 - I/O pads
