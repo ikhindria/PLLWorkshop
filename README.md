@@ -11,6 +11,7 @@
     7. Setting up Magic and NGSPICE
  - Day 2: Lab 
     1. Circuit Design and Pre-Layout Simulations
+    2. Layouts
 # Day 1: Basics of PLL
 ## 1. Introduction to PLL
 Phase-Locked Loop (PLL) is a control system which compares the frequency and phase of the on-chip oscillator with the reference signal and modifies the voltage of the oscillator in order to match the frequency of the oscillator with reference signal. PLL can be used to generate a signal of frequency equal to or multiple of the frequency of the reference signal. PLL reduces noise in the signal genrated by the oscillator.      
@@ -157,4 +158,29 @@ and so on
 
 ### v. PLL
 Combining all the components in one file, including loop filter and instantiating it.  
+![image](https://user-images.githubusercontent.com/90971641/133921993-158a4256-343e-4684-acd4-fce44169a260.png)
+
+**Close up**
+![image](https://user-images.githubusercontent.com/90971641/133922905-db782cc5-65b7-46dc-9738-24e5c0f225b5.png)
+## 2. Layouts
+**Commands:**
+![image](https://user-images.githubusercontent.com/90971641/133924475-67ab98fe-cb5c-4e54-8d43-17bf590f2bac.png)
+
+### i. FD
+![image](https://user-images.githubusercontent.com/90971641/133924484-a2b14d2f-34f7-4461-9bea-e7c11504cb50.png)
+
+### ii. PFD
+![image](https://user-images.githubusercontent.com/90971641/133924497-51146526-d17b-48ff-b692-6f2257975db3.png)
+
+### iii. CP
+![image](https://user-images.githubusercontent.com/90971641/133924512-82a8ddcf-1c24-4f20-acd3-21ace1c23364.png)
+
+### iv. VCO
+![image](https://user-images.githubusercontent.com/90971641/133924528-e3d38dbc-49bb-4a7d-b965-2621b6c1b1ac.png)
+
+### v. MUX
+![image](https://user-images.githubusercontent.com/90971641/133924545-70f68757-7aed-4981-b7ab-1d9f63f4f065.png)
+
+### vi. PLL
+![image](https://user-images.githubusercontent.com/90971641/133924562-e2f24ac3-9963-43d6-a315-82aa2c8aa60d.png)
 
