@@ -9,6 +9,8 @@
     5. PLL Specifications
     6. Pre-Layout Circuits 
     7. Setting up Magic and NGSPICE
+ - Day 2: Lab 
+    1. Circuit Design and Pre-Layout Simulations
 # Day 1: Basics of PLL
 ## 1. Introduction to PLL
 Phase-Locked Loop (PLL) is a control system which compares the frequency and phase of the on-chip oscillator with the reference signal and modifies the voltage of the oscillator in order to match the frequency of the oscillator with reference signal. PLL can be used to generate a signal of frequency equal to or multiple of the frequency of the reference signal. PLL reduces noise in the signal genrated by the oscillator.      
@@ -122,3 +124,37 @@ NGSPICE and MAGIc were pre-installed in the lab assisstance.
 
 **Downloading 130nm technology file for Magic**  
 ![image](https://user-images.githubusercontent.com/90971641/133918422-85dbbd35-13ec-4320-b0ac-71a541380a4f.png)
+
+# Day 2: Lab
+## 1. Circuit Design and Pre-Layout Simulations
+### i. FD
+- x denotes sub circuit and in sky 130nm library mos models are deoted as sub ckts
+m - mos
+c-capacitance
+r-resistance
+v-voltage source 
+and so on
+- 3 2 1 1 drain gate source body respectively names of net
+- width w=360 x 2 =720n; 360 is the min width in skywater for nfet. Double taken for transistor sizing purpose.
+- nets 1=vdd, 0=gnd, 2= gate (input) 3 output  
+**Command for simulation:**  
+![image](https://user-images.githubusercontent.com/90971641/133921410-5411689f-0de1-4c1d-a27a-a800bfdcb181.png)
+
+![image](https://user-images.githubusercontent.com/90971641/133921421-cda4000c-acc8-4207-8c6d-0f78d0f3fb0f.png)
+
+### ii. CP
+**When no voltage given, to check leakage current, Leakage Current = 40uV**  
+![image](https://user-images.githubusercontent.com/90971641/133921469-52b018ff-6977-4df0-b12e-2442223a9111.png)
+
+**When PULSE given**  
+![image](https://user-images.githubusercontent.com/90971641/133921490-da202b97-b8f6-45ef-aade-938b05162a92.png)
+
+### iii. VCO  
+![image](https://user-images.githubusercontent.com/90971641/133921584-6b1bb453-cd55-4f02-a10d-9c8f4584d4b6.png)
+
+### iv. PFD  
+![image](https://user-images.githubusercontent.com/90971641/133921605-adb2d215-a2a5-4297-a94e-ee4946ff71f5.png)
+
+### v. PLL
+Combining all the components in one file, including loop filter and instantiating it.  
+
