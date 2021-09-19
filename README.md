@@ -1,21 +1,21 @@
 # Phase-Locked Loop using Open-Source Google-Skywater 130nm 
 ![image](https://user-images.githubusercontent.com/90971641/133891914-a342895d-2a64-4b2f-b9a4-cb4efac3ac32.png)
 # Index
-- [Day 1: Basics of PLL and Lab Setup](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#day-1-basics-of-pll)
-    1. Introduction to PLL
-    2. Components of PLL
-    3. Some Common Terms
-    4. Tools and Development Flow
-    5. PLL Specifications
-    6. Pre-Layout Circuits 
-    7. Setting up Magic and NGSPICE
- - Day 2: Lab 
-    1. Circuit Design and Pre-Layout Simulations
-    2. Layouts
-    3. Extracting Parasitics
-    4. Post-Layout Simulations
-    5. Tapeout Theory
-  - Acknowledgements
+- [Day 1: Basics of PLL and Lab Setup](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#day-1-basics-of-pll)  
+    [1. Introduction to PLL](1-introduction-to-pll)  
+    [2. Components of PLL](2-components-of-pll)  
+    [3. Some Common Terms](3-some-common-terms)  
+    [4. Tools and Development Flow](4-tools-and-development-flow)  
+    [5. PLL Specifications](5-pll-specifications)  
+    [6. Pre-Layout Circuits](6-pre-layout-circuits)  
+    [7. Setting up Magic and NGSPICE](7-setting-up-magic-and-ngspice)  
+ - [Day 2: Lab](#day-2-lab)  
+    [1. Circuit Design and Pre-Layout Simulations](1-circuit-design-and-pre-layout-simulations)  
+    [2. Layouts](2-layouts)  
+    [3. Extracting Parasitics](3-extracting-parasitics)  
+    [4. Post-Layout Simulations](4-post-layout-simulations)  
+    [5. Tapeout Theory](5-tapeout-theory)  
+  - [Acknowledgements](acknowledgements)
 # Day 1: Basics of PLL
 ## 1. Introduction to PLL
 Phase-Locked Loop (PLL) is a control system which compares the frequency and phase of the on-chip oscillator with the reference signal and modifies the voltage of the oscillator in order to match the frequency of the oscillator with reference signal. PLL can be used to generate a signal of frequency equal to or multiple of the frequency of the reference signal. PLL reduces noise in the signal genrated by the oscillator.      
@@ -226,5 +226,5 @@ It will contain
 
 # Acknowledgements
 1)Mr. Kunal Ghosh From VSD  
-2)Ms. Lakshmi Sathi
+2)[Ms. Lakshmi Sathi](https://github.com/lakshmi-sathi/avsdpll_1v8)
 
