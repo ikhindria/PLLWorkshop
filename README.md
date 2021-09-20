@@ -11,7 +11,7 @@
    - [Setting up Magic and NGSPICE](https://github.com/ikhindria/PLLWorkshop/blob/main/README.md#7-setting-up-magic-and-ngspice)  
  - [Day 2: Lab](#day-2-lab)  
    - [Circuit Design and Pre-Layout Simulations](#1-circuit-design-and-pre-layout-simulations)  
-   - [Layouts](2-layouts)  
+   - [Layouts](#2-layouts)  
    - [Extracting Parasitics](#3-extracting-parasitics)  
    - [Post-Layout Simulations](#4-post-layout-simulations)  
    - [Tapeout Theory](#5-tapeout-theory)  
